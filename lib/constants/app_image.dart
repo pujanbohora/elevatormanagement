@@ -1,0 +1,22 @@
+const String appLogo = 'assets/images/app_logo2.png';
+const String kLottieLoading = 'assets/anim/114099-loading-animator-flutter.json';
+const String kNotification = "assets/icons/notification.png";
+const String kAccount = "assets/icons/account.png";
+const String kProfile = "assets/icons/profile.png";
+const String kCap = "assets/icons/cap.png";
+const String kMessage = "assets/icons/message.png";
+const String kGraduation = "assets/icons/graduation.png";
+const String kDashboard = "assets/icons/dashboard.png";
+const String kCalendar = "assets/icons/calendar.png";
+const String kNoConnection = "assets/images/no_connection.jpg";
+const String kNoMaterial = "assets/images/no_material.jpg";
+const String kRoutine = "assets/icons/routine.png";
+const String kUser = "assets/icons/user.png";
+const String kHome = "assets/images/home.png";
+const String kHomeOutline = "assets/images/home_outline.png";
+const String kOrderOutline = "assets/images/order_outline.png";
+const String kOrder = "assets/images/order.png";
+const String kAccountOutline = "assets/images/account_outline.png";
+const String kNoInternet = "assets/images/no_internet.svg";
+const String kPendingOrder = "assets/images/pending_order.png";
+
