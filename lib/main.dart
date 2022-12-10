@@ -1,12 +1,14 @@
 import 'dart:io';
 
 import 'package:elevatormaintance/routes/route_generator.dart';
+import 'package:elevatormaintance/screen/admin/controllers/MenuController.dart';
 import 'package:elevatormaintance/screen/auth/auth_view_model.dart';
 import 'package:elevatormaintance/view_model/common_view_model.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:form_builder_validators/localization/l10n.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:hive/hive.dart';
 import 'package:hive_flutter/adapters.dart';
 import 'package:loader_overlay/loader_overlay.dart';
@@ -56,6 +58,9 @@ class MyApp extends StatelessWidget {
           ChangeNotifierProvider(
             create: (_) => AuthViewModel(),
           ),
+          ChangeNotifierProvider(
+            create: (context) => MenuController(),
+          ),
         ],
         child: GestureDetector(
           onTap: () {
@@ -83,9 +88,11 @@ class MyApp extends StatelessWidget {
                   elevation: 0,
                 ),
                 fontFamily: "Muli",
-                textTheme: const TextTheme(
-                    bodyText1: TextStyle(color: black),
-                    bodyText2: TextStyle(color: black))),
+                    textTheme: GoogleFonts.poppinsTextTheme(Theme.of(context).textTheme)
+        .apply(bodyColor: Colors.black),),
+                // textTheme: const TextTheme(
+                //     bodyText1: TextStyle(color: black),
+                //     bodyText2: TextStyle(color: black))),
             debugShowCheckedModeBanner: false,
             initialRoute: '/',
             onGenerateRoute: RouteGenerator.generateRoute,

@@ -1,9 +1,12 @@
+import 'package:elevatormaintance/screen/admin/screens/main/main_screen.dart';
+import 'package:elevatormaintance/screen/auth/register_screen.dart';
 import 'package:flutter/material.dart';
 
 import '../constants/route_name.dart';
 import '../navigation/navigation_screen.dart';
 import '../navigation/splash_screen.dart';
 import '../screen/auth/login_screen.dart';
+import '../screen/customer/account/account_screen.dart';
 import '../screen/customer/account/emergency_visit_screen.dart';
 import '../screen/customer/account/order_history_screen.dart';
 import '../screen/customer/account/qr_code_generate_screen.dart';
@@ -45,6 +48,15 @@ class RouteGenerator {
       case routeQRScan:
         return MaterialPageRoute(
             builder: (_) => QRViewScreen());
+      case routeRegister:
+        return MaterialPageRoute(
+            builder: (_) => SignupPage());
+      case routeAdmin:
+        return MaterialPageRoute(
+            builder: (_) => MainScreen());
+      case routeAccount:
+        return MaterialPageRoute(
+            builder: (_) => AccountScreen());
       default:
         return MaterialPageRoute(
             builder: (_) => const SafeArea(

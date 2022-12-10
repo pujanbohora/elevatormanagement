@@ -1,5 +1,6 @@
 const routeSplash = '/';
 const routeLogin = '/login';
+const routeRegister = '/register';
 const routeNavigation = '/navigation';
 const routeOrderHistory = '/order/history';
 const routeIssue = '/issue/user';
@@ -7,3 +8,5 @@ const routeEmergencyVisit = '/emergency/visit';
 const routeIssueDetails = '/issue/details';
 const routeQRGenerator = '/qr/generate';
 const routeQRScan = '/qr/scan';
+const routeAdmin = '/admin/screen';
+const routeAccount = '/account';
