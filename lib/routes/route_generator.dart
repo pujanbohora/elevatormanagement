@@ -1,8 +1,10 @@
 import 'package:elevatormaintance/screen/admin/screens/dashboard/add_user_screen.dart';
+import 'package:elevatormaintance/screen/admin/screens/dashboard/admin_all_issue_details_screen.dart';
 import 'package:elevatormaintance/screen/admin/screens/dashboard/all_issues_screen.dart';
 import 'package:elevatormaintance/screen/admin/screens/dashboard/order_list_screen.dart';
 import 'package:elevatormaintance/screen/admin/screens/dashboard/staff_list_screen.dart';
 import 'package:elevatormaintance/screen/admin/screens/dashboard/user_list_screen.dart';
+import 'package:elevatormaintance/screen/admin/screens/dashboard/view_user_order_screen.dart';
 import 'package:elevatormaintance/screen/admin/screens/main/main_screen.dart';
 import 'package:elevatormaintance/screen/auth/register_screen.dart';
 import 'package:flutter/material.dart';
@@ -78,6 +80,14 @@ class RouteGenerator {
       case routeOrderList:
         return MaterialPageRoute(
             builder: (_) => OrderListScreen());
+      case routeAdminAllIssueDetails:
+        dynamic args = settings.arguments;
+        return MaterialPageRoute(
+            builder: (_) => AdminAllIssueDetailsScreen(args: args,));
+      case routeViewUserOrder:
+        dynamic args = settings.arguments;
+        return MaterialPageRoute(
+            builder: (_) => ViewUserOrderScreen(args: args,));
       default:
         return MaterialPageRoute(
             builder: (_) => const SafeArea(

@@ -15,3 +15,5 @@ const routeAddUser = '/add/user';
 const routeAllIssues = '/all/issue';
 const routeStaffList = '/staff/list';
 const routeOrderList = '/order/list';
+const routeAdminAllIssueDetails = '/issue/details/admin';
+const routeViewUserOrder = '/admin/user/order';

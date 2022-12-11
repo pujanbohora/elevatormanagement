@@ -47,7 +47,7 @@ class StorageInfoCard extends StatelessWidget {
                     style: TextStyle(color: white),
                   ),
                   Text(
-                    "$numOfFiles Files",
+                    "$numOfFiles",
                     style: Theme.of(context)
                         .textTheme
                         .caption!
