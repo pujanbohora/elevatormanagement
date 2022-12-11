@@ -1,3 +1,8 @@
+import 'package:elevatormaintance/screen/admin/screens/dashboard/add_user_screen.dart';
+import 'package:elevatormaintance/screen/admin/screens/dashboard/all_issues_screen.dart';
+import 'package:elevatormaintance/screen/admin/screens/dashboard/order_list_screen.dart';
+import 'package:elevatormaintance/screen/admin/screens/dashboard/staff_list_screen.dart';
+import 'package:elevatormaintance/screen/admin/screens/dashboard/user_list_screen.dart';
 import 'package:elevatormaintance/screen/admin/screens/main/main_screen.dart';
 import 'package:elevatormaintance/screen/auth/register_screen.dart';
 import 'package:flutter/material.dart';
@@ -5,6 +10,7 @@ import 'package:flutter/material.dart';
 import '../constants/route_name.dart';
 import '../navigation/navigation_screen.dart';
 import '../navigation/splash_screen.dart';
+import '../screen/admin/screens/account/admin_account_screen.dart';
 import '../screen/auth/login_screen.dart';
 import '../screen/customer/account/account_screen.dart';
 import '../screen/customer/account/emergency_visit_screen.dart';
@@ -54,9 +60,24 @@ class RouteGenerator {
       case routeAdmin:
         return MaterialPageRoute(
             builder: (_) => MainScreen());
-      case routeAccount:
+      case routeAdminAccount:
         return MaterialPageRoute(
-            builder: (_) => AccountScreen());
+            builder: (_) => ViewAccountScreen());
+      case routeUserList:
+        return MaterialPageRoute(
+            builder: (_) => UserList());
+      case routeAddUser:
+        return MaterialPageRoute(
+            builder: (_) => CreateUserScreen());
+      case routeAllIssues:
+        return MaterialPageRoute(
+            builder: (_) => ViewAllIssueScreen());
+      case routeStaffList:
+        return MaterialPageRoute(
+            builder: (_) => StaffListScreen());
+      case routeOrderList:
+        return MaterialPageRoute(
+            builder: (_) => OrderListScreen());
       default:
         return MaterialPageRoute(
             builder: (_) => const SafeArea(
